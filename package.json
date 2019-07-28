@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "Nothing, this is static"
+    "build": "echo Nothing, this is static"
   },
   "repository": {
     "type": "git",

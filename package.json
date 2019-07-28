@@ -1,0 +1,19 @@
+{
+  "name": "sonchu.co",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "Nothing, this is static"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chuson1996/sonchu.co.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chuson1996/sonchu.co/issues"
+  },
+  "homepage": "https://github.com/chuson1996/sonchu.co#readme"
+}

@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Son Chu Hoang - Co-Founder at Rens Original</title>
-  <link href="https://fonts.googleapis.com/css?family=Amiri|Roboto+Condensed:400,700&display=swap" rel="stylesheet">
 
   <meta name="description" content="Co-Founder at Rens Original - The world's first shoe made from recycled coffee and plastic">
 
@@ -28,9 +27,12 @@
   <meta name="twitter:image" content="./thumbnail.png">
 
   <style>
+    body {
+      font-family: Gellix;
+    }
     .hero {
-      background: url(WALK1.png);
-      color: white;
+      /* background: url(WALK1.png); */
+      color: black;
       height: 100vh;
       background-size: cover;
       background-position: center;
@@ -44,39 +46,66 @@
       font-weight: 400;
     }
     .hero h3 {
-      font-family: 'Roboto Condensed', sans-serif;
       font-weight: 400;
       letter-spacing: 3px;
     }
     body {
       margin: 0;
-      font-family: 'Amiri', serif;
     }
     header {
       position: fixed;
       top: 0;
       width: 100%;
-      color: white;
+      color: black;
       padding: 2rem;
       font-size: 1.4em;
       letter-spacing: 1px;
     }
     .text-button {
-      color: white;
+      color: black;
+    }
+    .video-background {
+      position: fixed;
+      z-index: 0;
+      width: 100%;
+    }
+    .content {
+      z-index: 1;
+      text-align: center;
+    }
+    blockquote {
+      margin-top: 3rem;
+      position: relative;
+      text-align: left;
+    }
+    blockquote::before {
+      content: '';
+      position: absolute;
+      left: -2rem;
+      height: 100%;
+      background: lightgrey;
+      width: 4px;
     }
   </style>
 </head>
 <body>
-  <header>
+  <!-- <header>
     <div class="logo-section">
       SON CHU HOANG
     </div>
-  </header>
+  </header> -->
   <section class="hero">
-    <h1>Co-Founder at Rens Original</h1>
-    <h3>WHY NOT DOING SOMETHING GOOD FOR THE WORLD AND LOOK COOL AS F***?</h3>
+    <div class="content">
+      <h1><b>Chu Hoang Son</b></h1>
+      <h3>Co-Founder, CMO, CTO @ <a href="https://rensoriginal.com" target="_blank">Rens Original</a></h3>
 
-    <a class="text-button" href="https://www.kickstarter.com/projects/1987199519/rens-the-totally-waterproof-sneaker-made-from-coffee"><h3>GET YOURS RENS</h3></a>
+      <h3><a href="https://linkedin.com/chu-hoang-son">LinkedIn</a> </h3>
+      <p>(I use LinkedIn more often than Facebook, surprisingly)</p>
+
+      <blockquote>
+        Most valuable lesson in the past 3 years:<br/><i>Jab Jab Jab Right Hook</i>
+      </blockquote>
+    </div>
   </section>
 </body>
 </html>

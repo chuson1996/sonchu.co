@@ -8,13 +8,13 @@ to this section's matching END comment to see page-specific styles.
 ******************************************************************************/
 /* Our default values set as CSS variables */
 :root {
-  --color-bg: #201E1F;
-  --color-text-main: #F6F8FF;
+  --color-bg: white;
+  --color-text-main: black;
   --color-primary: #FF4000;
   --wrapper-height: 85vh;
   --image-max-width: 320px;
-  --font-family: "HK Grotesk";
-  --font-family-header: "HK Grotesk";
+  --font-family: 'Roboto Mono', monospace;
+  --font-family-header: 'Roboto Mono', monospace;
 }
 
 /* Basic page style resets */
@@ -26,17 +26,6 @@ to this section's matching END comment to see page-specific styles.
 }
 
 /* Import fonts */
-@font-face {
-  font-family: HK Grotesk;
-  src: url("https://cdn.glitch.me/605e2a51-d45f-4d87-a285-9410ad350515%2FHKGrotesk-Regular.otf?v=1603136326027")
-    format("opentype");
-}
-@font-face {
-  font-family: HK Grotesk;
-  font-weight: bold;
-  src: url("https://cdn.glitch.me/605e2a51-d45f-4d87-a285-9410ad350515%2FHKGrotesk-Bold.otf?v=1603136323437")
-    format("opentype");
-}
 
 /* Our remix on glitch button */
 .btn--remix {
@@ -107,6 +96,9 @@ body {
   background-color: var(--color-bg);
   color: var(--color-text-main);
 }
+a {
+  color: var(--color-text-main);
+}
 .wrapper {
   min-height: var(--wrapper-height);
   place-items: center;
@@ -123,7 +115,7 @@ body {
 p {
   margin: 0 0 1rem 0;
   line-height: 1.5 !important;
-  font-size: 1rem;
+  font-size: 1.5rem;
 }
 h1,
 h2,
@@ -163,7 +155,6 @@ ul > li,
 ol > li {
   margin-bottom: 0.75rem;
   line-height: 1.5;
-  font-size: 1rem;
 }
 ul {
   padding: 0 0 0 18px;
@@ -171,14 +162,6 @@ ul {
 }
 ul.no-bullet {
   list-style-type: none;
-}
-
-/* Link styles */
-a:not(.btn--remix):link,
-a:not(.btn--remix):visited {
-  text-decoration: none;
-  color: var(--color-primary);
-  transition: background 0.2s linear;
 }
 
 /* Title style adjustments */
